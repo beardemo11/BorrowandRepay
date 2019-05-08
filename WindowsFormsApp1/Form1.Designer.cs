@@ -37,14 +37,14 @@
             this.label6 = new System.Windows.Forms.Label();
             this.MyName = new System.Windows.Forms.TextBox();
             this.BankName = new System.Windows.Forms.TextBox();
-            this.Amount = new System.Windows.Forms.TextBox();
+            this.txtAmount = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.lb_MyName = new System.Windows.Forms.Label();
             this.lb_MyMoney = new System.Windows.Forms.Label();
             this.lb_BankName = new System.Windows.Forms.Label();
             this.lb_BankMoney = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.btn_Borrow = new System.Windows.Forms.Button();
+            this.btn_Repay = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -125,12 +125,12 @@
             this.BankName.Size = new System.Drawing.Size(100, 22);
             this.BankName.TabIndex = 8;
             // 
-            // Amount
+            // txtAmount
             // 
-            this.Amount.Location = new System.Drawing.Point(286, 125);
-            this.Amount.Name = "Amount";
-            this.Amount.Size = new System.Drawing.Size(100, 22);
-            this.Amount.TabIndex = 9;
+            this.txtAmount.Location = new System.Drawing.Point(286, 125);
+            this.txtAmount.Name = "txtAmount";
+            this.txtAmount.Size = new System.Drawing.Size(100, 22);
+            this.txtAmount.TabIndex = 9;
             // 
             // label7
             // 
@@ -173,37 +173,39 @@
             this.lb_BankMoney.Size = new System.Drawing.Size(0, 12);
             this.lb_BankMoney.TabIndex = 14;
             // 
-            // button1
+            // btn_Borrow
             // 
-            this.button1.Location = new System.Drawing.Point(110, 123);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 15;
-            this.button1.Text = "借錢";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btn_Borrow.Location = new System.Drawing.Point(110, 123);
+            this.btn_Borrow.Name = "btn_Borrow";
+            this.btn_Borrow.Size = new System.Drawing.Size(75, 23);
+            this.btn_Borrow.TabIndex = 15;
+            this.btn_Borrow.Text = "借錢";
+            this.btn_Borrow.UseVisualStyleBackColor = true;
+            this.btn_Borrow.Click += new System.EventHandler(this.btn_Borrow_Click);
             // 
-            // button2
+            // btn_Repay
             // 
-            this.button2.Location = new System.Drawing.Point(443, 123);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 16;
-            this.button2.Text = "還錢";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btn_Repay.Location = new System.Drawing.Point(443, 123);
+            this.btn_Repay.Name = "btn_Repay";
+            this.btn_Repay.Size = new System.Drawing.Size(75, 23);
+            this.btn_Repay.TabIndex = 16;
+            this.btn_Repay.Text = "還錢";
+            this.btn_Repay.UseVisualStyleBackColor = true;
+            this.btn_Repay.Click += new System.EventHandler(this.btn_Repay_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btn_Repay);
+            this.Controls.Add(this.btn_Borrow);
             this.Controls.Add(this.lb_BankMoney);
             this.Controls.Add(this.lb_BankName);
             this.Controls.Add(this.lb_MyMoney);
             this.Controls.Add(this.lb_MyName);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.Amount);
+            this.Controls.Add(this.txtAmount);
             this.Controls.Add(this.BankName);
             this.Controls.Add(this.MyName);
             this.Controls.Add(this.label6);
@@ -231,14 +233,14 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox MyName;
         private System.Windows.Forms.TextBox BankName;
-        private System.Windows.Forms.TextBox Amount;
+        private System.Windows.Forms.TextBox txtAmount;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label lb_MyName;
         private System.Windows.Forms.Label lb_MyMoney;
         private System.Windows.Forms.Label lb_BankName;
         private System.Windows.Forms.Label lb_BankMoney;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btn_Borrow;
+        private System.Windows.Forms.Button btn_Repay;
     }
 }
 

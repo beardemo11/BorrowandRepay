@@ -22,9 +22,25 @@ namespace WindowsFormsApp1
         {
             person = new Person(MyName.Text, 0);
             bank = new Person(BankName.Text, 30000);
-            updateMoney();
             MyName.Enabled = false;
-            
+            BankName.Enabled = false;
+            lb_MyName.Text = MyName.Text;
+            lb_BankName.Text = BankName.Text;
+            updateMoney();
+        }
+
+        private void btn_Borrow_Click(object sender, EventArgs e)
+        {
+            person.borrow(bank, int.Parse(txtAmount.Text));
+            updateMoney();
+
+        }
+
+        private void btn_Repay_Click(object sender, EventArgs e)
+        {
+            person.repay(bank, int.Parse(txtAmount.Text));
+            updateMoney();
+
         }
 
         private void updateMoney()
