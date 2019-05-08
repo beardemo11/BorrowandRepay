@@ -28,13 +28,217 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.label1 = new System.Windows.Forms.Label();
+            this.btn_submit = new System.Windows.Forms.Button();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.MyName = new System.Windows.Forms.TextBox();
+            this.BankName = new System.Windows.Forms.TextBox();
+            this.Amount = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.lb_MyName = new System.Windows.Forms.Label();
+            this.lb_MyMoney = new System.Windows.Forms.Label();
+            this.lb_BankName = new System.Windows.Forms.Label();
+            this.lb_BankMoney = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.SuspendLayout();
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(108, 43);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(65, 12);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "請輸入姓名";
+            // 
+            // btn_submit
+            // 
+            this.btn_submit.Location = new System.Drawing.Point(443, 61);
+            this.btn_submit.Name = "btn_submit";
+            this.btn_submit.Size = new System.Drawing.Size(75, 23);
+            this.btn_submit.TabIndex = 1;
+            this.btn_submit.Text = "確認";
+            this.btn_submit.UseVisualStyleBackColor = true;
+            this.btn_submit.Click += new System.EventHandler(this.btn_submit_Click);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(110, 84);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(101, 12);
+            this.label2.TabIndex = 2;
+            this.label2.Text = "請輸入朋友的名字";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(110, 175);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(53, 12);
+            this.label3.TabIndex = 3;
+            this.label3.Text = "我的名字";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(403, 175);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(53, 12);
+            this.label4.TabIndex = 4;
+            this.label4.Text = "銀行名字";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(403, 230);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(41, 12);
+            this.label5.TabIndex = 5;
+            this.label5.Text = "銀行錢";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(110, 230);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(41, 12);
+            this.label6.TabIndex = 6;
+            this.label6.Text = "我的$$";
+            // 
+            // MyName
+            // 
+            this.MyName.Location = new System.Drawing.Point(228, 43);
+            this.MyName.Name = "MyName";
+            this.MyName.Size = new System.Drawing.Size(100, 22);
+            this.MyName.TabIndex = 7;
+            // 
+            // BankName
+            // 
+            this.BankName.Location = new System.Drawing.Point(228, 84);
+            this.BankName.Name = "BankName";
+            this.BankName.Size = new System.Drawing.Size(100, 22);
+            this.BankName.TabIndex = 8;
+            // 
+            // Amount
+            // 
+            this.Amount.Location = new System.Drawing.Point(286, 125);
+            this.Amount.Name = "Amount";
+            this.Amount.Size = new System.Drawing.Size(100, 22);
+            this.Amount.TabIndex = 9;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(226, 128);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(29, 12);
+            this.label7.TabIndex = 10;
+            this.label7.Text = "金額";
+            // 
+            // lb_MyName
+            // 
+            this.lb_MyName.AutoSize = true;
+            this.lb_MyName.Location = new System.Drawing.Point(177, 175);
+            this.lb_MyName.Name = "lb_MyName";
+            this.lb_MyName.Size = new System.Drawing.Size(0, 12);
+            this.lb_MyName.TabIndex = 11;
+            // 
+            // lb_MyMoney
+            // 
+            this.lb_MyMoney.AutoSize = true;
+            this.lb_MyMoney.Location = new System.Drawing.Point(179, 229);
+            this.lb_MyMoney.Name = "lb_MyMoney";
+            this.lb_MyMoney.Size = new System.Drawing.Size(0, 12);
+            this.lb_MyMoney.TabIndex = 12;
+            // 
+            // lb_BankName
+            // 
+            this.lb_BankName.AutoSize = true;
+            this.lb_BankName.Location = new System.Drawing.Point(483, 174);
+            this.lb_BankName.Name = "lb_BankName";
+            this.lb_BankName.Size = new System.Drawing.Size(0, 12);
+            this.lb_BankName.TabIndex = 13;
+            // 
+            // lb_BankMoney
+            // 
+            this.lb_BankMoney.AutoSize = true;
+            this.lb_BankMoney.Location = new System.Drawing.Point(485, 229);
+            this.lb_BankMoney.Name = "lb_BankMoney";
+            this.lb_BankMoney.Size = new System.Drawing.Size(0, 12);
+            this.lb_BankMoney.TabIndex = 14;
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(110, 123);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 15;
+            this.button1.Text = "借錢";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(443, 123);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(75, 23);
+            this.button2.TabIndex = 16;
+            this.button2.Text = "還錢";
+            this.button2.UseVisualStyleBackColor = true;
+            // 
+            // Form1
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.lb_BankMoney);
+            this.Controls.Add(this.lb_BankName);
+            this.Controls.Add(this.lb_MyMoney);
+            this.Controls.Add(this.lb_MyName);
+            this.Controls.Add(this.label7);
+            this.Controls.Add(this.Amount);
+            this.Controls.Add(this.BankName);
+            this.Controls.Add(this.MyName);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.btn_submit);
+            this.Controls.Add(this.label1);
+            this.Name = "Form1";
             this.Text = "Form1";
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
         }
 
         #endregion
+
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button btn_submit;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.TextBox MyName;
+        private System.Windows.Forms.TextBox BankName;
+        private System.Windows.Forms.TextBox Amount;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label lb_MyName;
+        private System.Windows.Forms.Label lb_MyMoney;
+        private System.Windows.Forms.Label lb_BankName;
+        private System.Windows.Forms.Label lb_BankMoney;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button2;
     }
 }
 
